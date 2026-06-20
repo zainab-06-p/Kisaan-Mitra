@@ -1,4 +1,4 @@
-gradio
+gradio==4.44.0
 gTTS
 requests
 python-dotenv
