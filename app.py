@@ -893,84 +893,69 @@ footer { display: none !important; }
 .nw-cta-note  { color:#94a3b8; font-size:0.8rem; margin-top:10px; }
 
 /* ════════════════════════════════════════
-   ADVISOR — LAYOUT WRAPPER
+    ADVISOR — VERTICAL LAYOUT WRAPPER
 ════════════════════════════════════════ */
-#km-split-row {
+#km-advisor-wrap {
     display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    align-items: stretch !important;
-    gap: 20px !important;
-    padding: 24px !important;
-    min-height: calc(100vh - 68px) !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 20px 24px !important;
+    min-height: calc(100vh - 72px) !important;
     background: linear-gradient(135deg, #f0fdf4 0%, #eff6ff 50%, #f0fdf4 100%) !important;
     background-size: 400% 400% !important;
     animation: advisorBg 20s ease infinite !important;
-    position: relative !important;
-    z-index: 1 !important;
     box-sizing: border-box !important;
 }
 
-/* Gradio wraps each Column in an extra div — target it */
-#km-split-row > div {
+#km-advisor-wrap > div {
     display: flex !important;
     flex-direction: column !important;
     min-width: 0 !important;
-    height: auto !important;
 }
 
-/* Responsive: Stack on smaller screens */
-@media (max-width: 900px) {
-    #km-split-row {
-        flex-direction: column !important;
-        flex-wrap: wrap !important;
-        min-height: auto !important;
-    }
-    #km-split-row > div {
-        width: 100% !important;
-        flex: none !important;
-    }
-}
-
-/* ════════════════════════════════════════
-   ADVISOR — SIDEBAR CARD
-════════════════════════════════════════ */
-#km-sidebar {
+/* ── CONTROL BAR (top row) ── */
+#km-control-bar {
     background: white !important;
     border: 1.5px solid #e2e8f0 !important;
-    border-radius: 22px !important;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.09), 0 2px 10px rgba(0,0,0,0.04) !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
+    border-radius: 18px !important;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07) !important;
+    padding: 16px 24px !important;
+    gap: 16px !important;
+    flex-shrink: 0 !important;
+    align-items: stretch !important;
+}
+
+/* Labels inside the control bar */
+#km-control-bar label,
+#km-control-bar .label-text {
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.04em !important;
+    color: #475569 !important;
+    white-space: nowrap !important;
+}
+
+/* Image upload inside control bar */
+#km-control-bar #km-image-in {
+    min-height: 42px !important;
+    overflow: hidden !important;
+}
+
+/* ── CHAT COLUMN (bottom area, fills remaining space) ── */
+#km-chat-col {
+    background: white !important;
+    border: 1.5px solid #e2e8f0 !important;
+    border-radius: 18px !important;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07) !important;
+    overflow: hidden !important;
     padding: 0 !important;
     display: flex !important;
     flex-direction: column !important;
-    flex: 0 0 340px !important;
-    width: 340px !important;
-    min-width: 300px !important;
-    max-width: 380px !important;
-    max-height: calc(100vh - 92px) !important;
-    position: sticky !important;
-    top: 24px !important;
+    flex: 1 1 auto !important;
+    min-height: 300px !important;
 }
 
-/* Sidebar scrollbar styling */
-#km-sidebar::-webkit-scrollbar {
-    width: 5px;
-}
 
-#km-sidebar::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-#km-sidebar::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
-    border-radius: 3px;
-}
-
-#km-sidebar::-webkit-scrollbar-thumb:hover {
-    background: #94a3b8;
-}
 
 /* ════════════════════════════════════════
    EXAMPLE QUERIES
@@ -1087,13 +1072,6 @@ footer { display: none !important; }
 
 
 
-/* Hide Gradio's per-component clear/reset "X" icons in sidebar */
-#km-sidebar button[aria-label*="Clear"],
-#km-sidebar button[title*="Clear"],
-#km-sidebar button[data-testid*="clear"],
-#km-sidebar .icon-button[aria-label*="Remove"] {
-    display: none !important;
-}
 
 /* Image upload — visible drop zone */
 #km-image-in {
@@ -1375,37 +1353,7 @@ footer { display: none !important; }
     box-shadow: 0 2px 8px rgba(239,68,68,0.12) !important;
 }
 
-/* ════════════════════════════════════════
-   ADVISOR — CHAT CARD
-════════════════════════════════════════ */
-#km-chat-col {
-    background: white !important;
-    border: 1.5px solid #e2e8f0 !important;
-    border-radius: 22px !important;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.09), 0 2px 10px rgba(0,0,0,0.04) !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    flex: 1 1 auto !important;
-    min-width: 0 !important;
-    /* Don't force a height — let chatbot's fixed height drive the size */
-}
 
-/* Chat column inner Gradio wrapper — zero out chrome */
-#km-chat-col > div,
-#km-chat-col > div > div {
-    padding: 0 !important;
-    gap: 0 !important;
-    width: 100% !important;
-}
-
-/* Responsive: Adjust on smaller screens */
-@media (max-width: 900px) {
-    #km-chat-col {
-        min-height: 500px !important;
-    }
-}
 
 /* Chat header — compact */
 .km-chat-head {
@@ -1539,8 +1487,8 @@ footer { display: none !important; }
     background: #f8fafc !important;
     border: none !important;
     flex: 1 1 auto !important;
-    min-height: 250px !important;
-    max-height: calc(100vh - 400px) !important;
+    min-height: 280px !important;
+    max-height: none !important;
     overflow-y: auto !important;
 }
 
@@ -1582,7 +1530,7 @@ footer { display: none !important; }
     flex-grow: 0 !important;
     border-radius: 0 0 22px 22px !important;
     min-height: 60px !important;
-    max-height: 110px !important;
+    max-height: unset !important;
     width: 100% !important;
     box-sizing: border-box !important;
 }
@@ -2168,50 +2116,50 @@ with gr.Blocks(
 
         # ── TAB 1: ADVISOR ────────────────────────────────────────────────────
         with gr.Tab(label="\U0001f33e Advisor", id=1):
-            with gr.Row(elem_id="km-split-row", equal_height=False):
-                # ── LEFT: Sidebar ─────────────────────────────────────────────
-                with gr.Column(scale=2, elem_id="km-sidebar", min_width=260):
-                    gr.HTML(SIDEBAR_HEAD_HTML)
-
+            with gr.Column(elem_id="km-advisor-wrap"):
+                # ── TOP: Control Bar (horizontal) ─────────────────────────────
+                with gr.Row(elem_id="km-control-bar", equal_height=True):
                     audio_input = gr.Audio(
-                        label="\U0001f3a4 Voice Input",
+                        label="\U0001f3a4 Voice",
                         type="filepath",
                         sources=["microphone"],
                         elem_id="km-audio-in",
+                        scale=2,
                     )
 
                     image_input = gr.Image(
-                        label="\U0001f4f7 Crop Photo",
+                        label="\U0001f4f7 Photo",
                         type="filepath",
                         sources=["upload"],
-                        height=150,
+                        height=120,
                         elem_id="km-image-in",
+                        scale=2,
                     )
 
-                    gr.HTML('<div class="km-sb-rule"></div>')
-
                     language_choice = gr.Dropdown(
-                        label="\U0001f310 Language",
+                        label="\U0001f310 Lang",
                         choices=["Hindi", "Marathi", "English"],
                         value="Hindi",
                         elem_id="km-lang",
+                        scale=1,
                     )
 
                     audio_output = gr.Audio(
-                        label="\U0001f50a Audio Reply",
+                        label="\U0001f50a TTS",
                         type="filepath",
                         elem_id="km-audio-out",
+                        scale=2,
                     )
-
-                    gr.HTML('<div class="km-sb-rule"></div>')
 
                     clear_btn = gr.Button(
-                        "\U0001f5d1\ufe0f Clear Chat",
+                        "\U0001f5d1\ufe0f Clear",
                         elem_id="km-clear",
+                        scale=0,
+                        min_width=90,
                     )
 
-                # ── RIGHT: Chat Panel ─────────────────────────────────────────
-                with gr.Column(scale=3, elem_id="km-chat-col", min_width=340):
+                # ── BOTTOM: Chat Panel ──────────────────────────────────────
+                with gr.Column(elem_id="km-chat-col", min_width=340):
                     gr.HTML(CHAT_HEAD_HTML)
 
                     # Quick-prompt chips (functional Gradio buttons)
@@ -2234,7 +2182,8 @@ with gr.Blocks(
 
                     chatbot = gr.Chatbot(
                         label="",
-                        height=480,
+                        height=520,
+                        type="tuples",
                         bubble_full_width=False,
                         show_copy_button=True,
                         elem_id="km-chatbot",
@@ -2320,15 +2269,16 @@ with gr.Blocks(
         language_choice,
     ]
 
-    send_btn.click(fn=chat_fn, inputs=shared_inputs, outputs=shared_outputs)
-    text_input.submit(fn=chat_fn, inputs=shared_inputs, outputs=shared_outputs)
+    send_btn.click(fn=chat_fn, inputs=shared_inputs, outputs=shared_outputs, api_name=False)
+    text_input.submit(fn=chat_fn, inputs=shared_inputs, outputs=shared_outputs, api_name=False)
     clear_btn.click(
         fn=clear_chat,
         outputs=[chatbot, llm_history, cached_image, text_input, audio_output],
+        api_name=False,
     )
     # Both CTA buttons switch to the Advisor tab (id=1)
-    hero_cta_btn.click(fn=lambda: gr.update(selected=1), outputs=tabs)
-    bottom_cta_btn.click(fn=lambda: gr.update(selected=1), outputs=tabs)
+    hero_cta_btn.click(fn=lambda: gr.update(selected=1), outputs=tabs, api_name=False)
+    bottom_cta_btn.click(fn=lambda: gr.update(selected=1), outputs=tabs, api_name=False)
 
     # Quick prompt chips fill the text box
     q1.click(
@@ -2336,18 +2286,21 @@ with gr.Blocks(
             "My crop has unusual spots or discoloration, can you help diagnose it?"
         ),
         outputs=text_input,
+        api_name=False,
     )
     q2.click(
         fn=lambda: (
             "What are today's mandi prices for my crops and when is the best time to sell?"
         ),
         outputs=text_input,
+        api_name=False,
     )
     q3.click(
         fn=lambda: (
             "What organic and natural solutions are available for my crop problem?"
         ),
         outputs=text_input,
+        api_name=False,
     )
 
 

@@ -24,3 +24,4 @@ Thumbs.db
 # Deployment scripts
 _deploy_*.py
 _check_*.py
+deploy_to_hf.py
