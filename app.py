@@ -2179,7 +2179,6 @@ with gr.Blocks(
                     chatbot = gr.Chatbot(
                         label="",
                         height=520,
-                        bubble_full_width=False,
                         show_copy_button=True,
                         elem_id="km-chatbot",
                         placeholder=(
