@@ -1,8 +1,6 @@
-gradio==4.44.0
 gTTS
 requests
 python-dotenv
 Pillow
 pydub
 SpeechRecognition
-huggingface-hub==0.28.1
