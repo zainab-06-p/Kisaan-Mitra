@@ -1,7 +1,7 @@
-gradio==4.44.0
-gTTS==2.5.1
-requests==2.32.3
-python-dotenv==1.0.1
-Pillow==10.4.0
-pydub==0.25.1
-SpeechRecognition==3.10.4
+gradio
+gTTS
+requests
+python-dotenv
+Pillow
+pydub
+SpeechRecognition
