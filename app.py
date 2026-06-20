@@ -2352,6 +2352,5 @@ with gr.Blocks(
 
 
 # ── Launch ────────────────────────────────────────────────────────────────────
-if __name__ == "__main__":
-    demo.queue()
-    demo.launch(share=False)
+demo.queue()
+demo.launch(server_name="0.0.0.0", share=False)
