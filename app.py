@@ -8,8 +8,11 @@ RAG strategy:
 """
 
 import os
+import tempfile
+import wave
 
 import gradio as gr
+import numpy as np
 from dotenv import load_dotenv
 
 from disease_module import handle_disease_query, lookup_disease_info
@@ -66,7 +69,20 @@ def chat_fn(
 ):
     query_text = ""
     if audio_input is not None:
-        query_text = transcribe_audio(audio_input)
+        # Gradio 6 returns (sample_rate, audio_array) tuple instead of filepath
+        if isinstance(audio_input, tuple) and audio_input[1] is not None:
+            sr, data = audio_input
+            tmp = tempfile.NamedTemporaryFile(suffix=".wav", delete=False)
+            if data.dtype != np.int16:
+                data = (data * 32767).astype(np.int16)
+            with wave.open(tmp.name, "wb") as wf:
+                wf.setnchannels(1)
+                wf.setsampwidth(2)
+                wf.setframerate(sr)
+                wf.writeframes(data.tobytes())
+            query_text = transcribe_audio(tmp.name)
+        else:
+            query_text = transcribe_audio(audio_input)
         if not query_text:
             print("[app.py] STT failed — using text fallback.")
 
