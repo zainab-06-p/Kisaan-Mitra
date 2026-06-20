@@ -1,0 +1,68 @@
+{
+  "pune": {
+    "onion": { "price_per_quintal": 1850, "trend": "rising", "unit": "INR" },
+    "tomato": { "price_per_quintal": 2200, "trend": "stable", "unit": "INR" },
+    "wheat": { "price_per_quintal": 2150, "trend": "falling", "unit": "INR" },
+    "sugarcane": { "price_per_quintal": 315, "trend": "stable", "unit": "INR" },
+    "potato": { "price_per_quintal": 1200, "trend": "rising", "unit": "INR" },
+    "garlic": { "price_per_quintal": 7500, "trend": "stable", "unit": "INR" },
+    "cabbage": { "price_per_quintal": 800, "trend": "falling", "unit": "INR" }
+  },
+  "nashik": {
+    "onion": { "price_per_quintal": 1700, "trend": "stable", "unit": "INR" },
+    "tomato": { "price_per_quintal": 1950, "trend": "rising", "unit": "INR" },
+    "grapes": { "price_per_quintal": 4500, "trend": "rising", "unit": "INR" },
+    "wheat": { "price_per_quintal": 2050, "trend": "stable", "unit": "INR" },
+    "maize": { "price_per_quintal": 1750, "trend": "rising", "unit": "INR" },
+    "pomegranate": {
+      "price_per_quintal": 8500,
+      "trend": "stable",
+      "unit": "INR"
+    },
+    "strawberry": {
+      "price_per_quintal": 12000,
+      "trend": "rising",
+      "unit": "INR"
+    }
+  },
+  "aurangabad": {
+    "cotton": { "price_per_quintal": 6800, "trend": "stable", "unit": "INR" },
+    "soybean": { "price_per_quintal": 4300, "trend": "rising", "unit": "INR" },
+    "wheat": { "price_per_quintal": 2100, "trend": "stable", "unit": "INR" },
+    "onion": { "price_per_quintal": 1600, "trend": "falling", "unit": "INR" },
+    "bajra": { "price_per_quintal": 2200, "trend": "stable", "unit": "INR" },
+    "tur_dal": { "price_per_quintal": 6500, "trend": "rising", "unit": "INR" },
+    "sunflower": { "price_per_quintal": 5800, "trend": "stable", "unit": "INR" }
+  },
+  "nagpur": {
+    "orange": { "price_per_quintal": 3800, "trend": "rising", "unit": "INR" },
+    "cotton": { "price_per_quintal": 6600, "trend": "stable", "unit": "INR" },
+    "soybean": { "price_per_quintal": 4100, "trend": "stable", "unit": "INR" },
+    "wheat": { "price_per_quintal": 2080, "trend": "stable", "unit": "INR" },
+    "tomato": { "price_per_quintal": 1800, "trend": "falling", "unit": "INR" },
+    "chilli": { "price_per_quintal": 9500, "trend": "rising", "unit": "INR" },
+    "turmeric": { "price_per_quintal": 7200, "trend": "stable", "unit": "INR" }
+  },
+  "mumbai": {
+    "onion": { "price_per_quintal": 2100, "trend": "rising", "unit": "INR" },
+    "tomato": { "price_per_quintal": 2400, "trend": "stable", "unit": "INR" },
+    "potato": { "price_per_quintal": 1500, "trend": "rising", "unit": "INR" },
+    "garlic": { "price_per_quintal": 8200, "trend": "rising", "unit": "INR" },
+    "wheat": { "price_per_quintal": 2200, "trend": "stable", "unit": "INR" },
+    "rice": { "price_per_quintal": 3200, "trend": "stable", "unit": "INR" },
+    "sugarcane": { "price_per_quintal": 340, "trend": "stable", "unit": "INR" }
+  },
+  "kolhapur": {
+    "sugarcane": { "price_per_quintal": 320, "trend": "stable", "unit": "INR" },
+    "soybean": { "price_per_quintal": 4250, "trend": "rising", "unit": "INR" },
+    "groundnut": {
+      "price_per_quintal": 5600,
+      "trend": "stable",
+      "unit": "INR"
+    },
+    "tomato": { "price_per_quintal": 2100, "trend": "rising", "unit": "INR" },
+    "onion": { "price_per_quintal": 1750, "trend": "stable", "unit": "INR" },
+    "ginger": { "price_per_quintal": 11000, "trend": "rising", "unit": "INR" },
+    "rice": { "price_per_quintal": 2800, "trend": "stable", "unit": "INR" }
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "diseases": [
+    {
+      "name": "Leaf Spot / Early Blight",
+      "keywords": ["leaf spot", "early blight", "alternaria", "brown spots", "dark spots", "yellow halo", "patte par daag", "patte par dhabb", "paan var dag"],
+      "crops": ["tomato", "potato", "brinjal", "tamatar", "aloo", "baingan"],
+      "symptoms": [
+        "Dark brown or black circular spots on leaves with yellow halo",
+        "Spots have concentric rings (target-board pattern)",
+        "Starts on older lower leaves first",
+        "Leaves turn yellow and drop prematurely",
+        "Fruit may develop dark sunken lesions"
+      ],
+      "cause": "Fungal infection by Alternaria solani. Spreads through water splash and wind.",
+      "favourable_conditions": "High humidity above 90%, temperatures 24-29 degrees C, wet weather or overhead irrigation",
+      "organic_remedies": [
+        {
+          "name": "Neem Oil Spray",
+          "preparation": "Mix 50ml cold-pressed neem oil plus 5 drops liquid soap in 5 litres of water. Shake well before use.",
+          "application": "Spray on both upper and lower leaf surfaces. Apply in early morning or evening to avoid leaf burn.",
+          "frequency": "Every 7 days for 4-5 weeks. Start at first sign of disease."
+        },
+        {
+          "name": "Trichoderma Spray",
+          "preparation": "Mix 250g Trichoderma viride powder in 15 litres of water.",
+          "application": "Spray on leaves or drench soil around plant base.",
+          "frequency": "Every 15 days as prevention; every 7 days for active infection."
+        },
+        {
+          "name": "Bordeaux Mixture",
+          "preparation": "Dissolve 100g copper sulphate in 5L water separately. Dissolve 100g lime in another 5L water. Mix both slowly. Should be sky-blue colour.",
+          "application": "Spray on leaves. Do not apply during flowering as it may reduce fruit set.",
+          "frequency": "Every 10-15 days."
+        }
+      ],
+      "prevention": [
+        "Remove and destroy infected leaves immediately — do not compost them",
+        "Use drip irrigation instead of overhead watering",
+        "Maintain good spacing between plants for air circulation",
+        "Rotate crops every season — do not plant tomato/potato in the same spot two years in a row",
+        "Apply organic mulch to prevent soil splash onto lower leaves"
+      ],
+      "faqs": [
+        {"q": "Can I eat tomatoes from an infected plant?", "a": "Yes, the fruit is safe to eat if it has no visible lesions. Remove and discard any fruit with dark sunken spots."},
+        {"q": "Will the spots spread to other plants?", "a": "Yes, spores spread through water splash and wind. Spray immediately and remove infected leaves."},
+        {"q": "Is it different from late blight?", "a": "Yes. Early blight spots are dry and brown with rings. Late blight spots are water-soaked and have white fuzzy mold underneath."},
+        {"q": "How long does neem oil treatment take to show results?", "a": "You should see reduced new spot formation in 7-10 days. Existing spots will not disappear but new spread stops."},
+        {"q": "What if I don't have neem oil?", "a": "Use wood ash dissolved in water, or cow urine diluted 1:10 with water, or garlic-chilli spray as alternatives."}
+      ],
+      "when_to_consult_kvk": "If more than 30% of leaves are affected within one week, or if the disease spreads to the fruit."
+    },
+    {
+      "name": "Late Blight",
+      "keywords": ["late blight", "phytophthora", "water soaked", "white mold", "fuzzy mold", "pich blight", "jhulsa"],
+      "crops": ["tomato", "potato", "tamatar", "aloo"],
+      "symptoms": [
+        "Water-soaked pale green or grey-brown lesions on leaves",
+        "White fuzzy mold on underside of leaves in humid conditions",
+        "Lesions spread very rapidly — can destroy field in 3-5 days",
+        "Fruit develops firm brown rot with rough texture",
+        "Strong unpleasant smell from infected tissue"
+      ],
+      "cause": "Oomycete pathogen Phytophthora infestans. Very aggressive — spreads fast in cool wet weather.",
+      "favourable_conditions": "Cool temperatures 10-25 degrees C, rain or heavy dew, high humidity above 90%",
+      "organic_remedies": [
+        {
+          "name": "Copper Oxychloride Spray",
+          "preparation": "Dissolve 300g copper oxychloride in 15 litres of water.",
+          "application": "Spray entire plant thoroughly including undersides of leaves.",
+          "frequency": "Every 5-7 days during rainy season. This is the most effective organic option."
+        },
+        {
+          "name": "Panchagavya Spray",
+          "preparation": "Mix 300ml Panchagavya in 10 litres of water (3% solution).",
+          "application": "Spray on leaves and soil around plant.",
+          "frequency": "Every 10 days as prevention; every 5 days for active infection."
+        }
+      ],
+      "prevention": [
+        "Do not work in the field when leaves are wet — you spread spores on your clothes",
+        "Destroy all infected plant material by burning — do not leave in field",
+        "Do not store infected potatoes near healthy plants",
+        "Plant disease-resistant varieties in future seasons"
+      ],
+      "faqs": [
+        {"q": "Is late blight worse than early blight?", "a": "Yes. Late blight is much more aggressive and can destroy an entire field within a week. Act immediately if you see white fuzzy mold."},
+        {"q": "Can late blight spread from potato to tomato?", "a": "Yes, the same pathogen affects both. Keep potatoes and tomatoes away from each other."},
+        {"q": "My plant is already severely infected — can it recover?", "a": "Severely infected plants rarely recover. Remove and burn them to protect the rest of the field."}
+      ],
+      "when_to_consult_kvk": "Immediately if you see white fuzzy mold on leaf undersides. This disease can destroy entire crop in days."
+    },
+    {
+      "name": "Yellow Leaf Curl Virus (TYLCV)",
+      "keywords": ["leaf curl", "yellow leaf curl", "curling leaves", "patta murna", "paan valan", "whitefly", "safed makhi", "virus"],
+      "crops": ["tomato", "chilli", "pepper", "tamatar", "mirchi"],
+      "symptoms": [
+        "Leaves curl upward and turn yellow, especially young leaves",
+        "Plants are stunted and bushy with shortened internodes",
+        "Flowers drop before fruit sets",
+        "Young leaves are much smaller than normal",
+        "Tiny white whitefly insects visible on leaf undersides"
+      ],
+      "cause": "Begomovirus spread by whitefly (Bemisia tabaci). The virus itself has no cure — must control the whitefly vector.",
+      "favourable_conditions": "Dry hot weather with large whitefly populations, drought conditions",
+      "organic_remedies": [
+        {
+          "name": "Yellow Sticky Traps",
+          "preparation": "Buy or make yellow boards coated with sticky grease or castor oil.",
+          "application": "Hang at crop canopy level. Use 10-15 traps per acre.",
+          "frequency": "Replace every 2-3 weeks or when full."
+        },
+        {
+          "name": "Neem Seed Kernel Extract (NSKE 5%)",
+          "preparation": "Soak 500g neem seeds overnight. Crush and filter through cloth. Add to 10 litres of water.",
+          "application": "Spray on both leaf surfaces, especially undersides where whiteflies live.",
+          "frequency": "Every 5 days for 4 applications to break whitefly life cycle."
+        },
+        {
+          "name": "Soap and Water Spray",
+          "preparation": "Dissolve 10g bar soap (not detergent) in 1 litre of water.",
+          "application": "Spray directly on whitefly colonies on leaf undersides.",
+          "frequency": "Every 3-4 days."
+        }
+      ],
+      "prevention": [
+        "Remove and burn virus-infected plants immediately — the virus has no cure",
+        "Plant maize or sorghum as border crop to reduce whitefly entry",
+        "Use reflective silver/aluminium mulch to repel whiteflies",
+        "Avoid planting in dry months when whitefly populations are highest"
+      ],
+      "faqs": [
+        {"q": "Can the infected plant recover?", "a": "No. Once a plant has the virus, it cannot recover. Remove it to protect other plants."},
+        {"q": "Is the virus in the soil?", "a": "No. The virus is carried only by whiteflies. Controlling whiteflies protects your field."},
+        {"q": "Can I save seeds from infected plants?", "a": "No. Do not save seeds from virus-infected plants as they may carry the virus."}
+      ],
+      "when_to_consult_kvk": "If more than 20% of plants are affected — the disease spreads fast through whiteflies."
+    },
+    {
+      "name": "Powdery Mildew",
+      "keywords": ["powdery mildew", "white powder", "safed powder", "white coating", "safed churn", "white fungus", "pith"],
+      "crops": ["wheat", "grapes", "cucumber", "peas", "tomato", "chilli", "gehun", "angur", "kakdi", "matar"],
+      "symptoms": [
+        "White powdery coating on upper leaf surface",
+        "Powder also appears on stems and young fruit",
+        "Leaves turn yellow then brown and fall",
+        "Premature ripening and poor fruit quality",
+        "Affected parts look like dusted with flour"
+      ],
+      "cause": "Fungal infection by Erysiphe or Leveillula species. Unlike most fungi, it thrives in dry conditions.",
+      "favourable_conditions": "Dry weather with moderate temperatures 20-27 degrees C, low humidity, poor air circulation",
+      "organic_remedies": [
+        {
+          "name": "Baking Soda Spray",
+          "preparation": "Mix 5g baking soda (meetha soda) plus 20ml neem oil plus 2 drops liquid soap in 1 litre of water.",
+          "application": "Spray on infected leaves in early morning. Changes pH on leaf surface which kills fungus.",
+          "frequency": "Every 5-7 days for 3-4 weeks."
+        },
+        {
+          "name": "Wood Ash Solution",
+          "preparation": "Mix 100g wood ash in 5 litres of water. Let sit overnight. Strain through cloth before use.",
+          "application": "Spray on both leaf surfaces. The alkaline pH kills the fungus.",
+          "frequency": "Every 7 days."
+        },
+        {
+          "name": "Cow Urine Spray",
+          "preparation": "Dilute fresh cow urine 1:10 with water.",
+          "application": "Spray on leaves. Avoid during flowering as smell may attract insects.",
+          "frequency": "Every 7 days."
+        }
+      ],
+      "prevention": [
+        "Maintain proper plant spacing — 45-60cm between plants",
+        "Avoid excess nitrogen fertilizers — they make soft tissue that fungi love",
+        "Water at the base of plants, never on leaves",
+        "Remove infected leaves and dispose off-field"
+      ],
+      "faqs": [
+        {"q": "Can I wash off the white powder?", "a": "You can wipe it off but the fungus will return unless you spray a treatment. The powder is the fungal spores — washing spreads them."},
+        {"q": "My grapes have white powder — is this powdery mildew?", "a": "Yes, grapes are very commonly affected. Apply baking soda spray or sulphur-based organic spray every 7 days."},
+        {"q": "Does rain help remove powdery mildew?", "a": "Surprisingly no — powdery mildew actually prefers dry conditions. Rain can temporarily wash spores off but the fungus quickly returns."}
+      ],
+      "when_to_consult_kvk": "If more than 40% of crop area is covered within two weeks despite treatment."
+    },
+    {
+      "name": "Root Rot / Fusarium Wilt",
+      "keywords": ["root rot", "wilt", "fusarium", "wilting", "murjhana", "roots rotting", "jad sadna", "plant dying", "sudden wilt", "stem rot"],
+      "crops": ["tomato", "chilli", "cotton", "banana", "sugarcane", "wheat", "tamatar", "mirchi", "kapas", "kela"],
+      "symptoms": [
+        "Plant wilts suddenly during daytime even when soil has adequate moisture",
+        "Lower leaves turn yellow and drop",
+        "Dark brown or reddish-brown discolouration visible inside stem when cut lengthwise",
+        "Roots appear brown, black, and mushy instead of white and firm",
+        "Wilting does not recover even after evening watering"
+      ],
+      "cause": "Soil-borne fungi Fusarium oxysporum or Phytophthora. Enters through roots, then blocks water transport inside stem.",
+      "favourable_conditions": "Waterlogged soil, poor drainage, heavy clay soils, soil pH below 5.5",
+      "organic_remedies": [
+        {
+          "name": "Trichoderma Soil Treatment",
+          "preparation": "Mix 1kg Trichoderma viride powder with 100kg well-rotted farm yard manure (FYM). Moisten slightly and keep in shade for 15 days before use.",
+          "application": "Apply to top 6 inches of soil before planting. Or mix 10g in 1 litre water and drench around plant base.",
+          "frequency": "Once before planting as prevention. For active infection: drench every 15 days."
+        },
+        {
+          "name": "Jeevamrut Drench",
+          "preparation": "Mix 10 litres cow dung plus 10 litres cow urine plus 2kg jaggery plus 2kg pulse flour in 200 litres of water. Stir daily for 48 hours to ferment.",
+          "application": "Pour 500ml per plant directly at root zone in evening.",
+          "frequency": "Every 15 days during growing season."
+        },
+        {
+          "name": "Garlic-Ginger Extract",
+          "preparation": "Grind 100g garlic plus 100g ginger in 1 litre water. Strain through cloth.",
+          "application": "Pour 100ml diluted in 1 litre water per plant at root zone.",
+          "frequency": "Every 7 days for 4 weeks."
+        }
+      ],
+      "prevention": [
+        "Improve field drainage before planting — add sand or organic matter to heavy soils",
+        "Never overwater — let soil dry slightly between irrigations",
+        "Use raised beds or ridges in waterlogging-prone areas",
+        "Apply lime if soil pH is below 6.0 to neutralise acidity",
+        "Never replant the same crop family in soil where wilt occurred"
+      ],
+      "faqs": [
+        {"q": "My plant wilts during day but recovers at night — is this root rot?", "a": "Early stage yes — this is the classic sign of Fusarium wilt. Act immediately with Trichoderma drench before the plant loses the ability to recover at all."},
+        {"q": "Can I save an infected plant?", "a": "If caught early (recovers at night), Trichoderma drench can slow it. If the plant no longer recovers at night, remove it to protect the rest of the field."},
+        {"q": "Will the same disease come back next season?", "a": "Yes — Fusarium lives in soil for 10+ years. Rotate crops, add Trichoderma to soil before next planting, and improve drainage."}
+      ],
+      "when_to_consult_kvk": "Immediately — this disease spreads fast through soil and can destroy your entire crop within 2-3 weeks."
+    },
+    {
+      "name": "Aphid Infestation",
+      "keywords": ["aphid", "aphids", "maahu", "plant lice", "tiny insects", "sticky leaves", "chota kida", "sap sucking", "curled leaves insect"],
+      "crops": ["wheat", "mustard", "tomato", "cotton", "chilli", "all vegetables", "gehun", "sarson", "tamatar", "kapas"],
+      "symptoms": [
+        "Clusters of tiny soft green, black, or yellow insects on stem tips and leaf undersides",
+        "New leaves curl and distort due to sap sucking",
+        "Sticky shiny coating (honeydew) on leaves",
+        "Black sooty mold growing on the honeydew",
+        "Plant growth slows; new growth is weak and distorted"
+      ],
+      "cause": "Infestation by Aphididae family insects. They suck plant sap and reproduce very quickly — one aphid can produce 80 offspring in a week.",
+      "favourable_conditions": "Dry weather, warm temperatures 15-25 degrees C, excess nitrogen fertilization making soft new growth",
+      "organic_remedies": [
+        {
+          "name": "Neem Oil Spray",
+          "preparation": "Mix 50ml neem oil plus 5ml liquid soap in 5 litres of water. Shake vigorously before each use.",
+          "application": "Spray directly on aphid colonies especially on leaf undersides. Neem disrupts aphid reproduction.",
+          "frequency": "Every 4-5 days for 3 consecutive applications. Then monitor weekly."
+        },
+        {
+          "name": "Strong Water Jet",
+          "preparation": "No preparation needed — use a hose with strong pressure.",
+          "application": "Knock aphids off plants with strong jet of water in early morning. Aphids on ground cannot climb back easily.",
+          "frequency": "Daily for 5 days, then monitor."
+        },
+        {
+          "name": "Garlic-Chilli Spray",
+          "preparation": "Grind 5 garlic cloves plus 2 green chillies in 1 litre of water. Filter through cloth.",
+          "application": "Spray on infected areas. The pungent smell repels aphids.",
+          "frequency": "Every 3 days for 2 weeks."
+        }
+      ],
+      "prevention": [
+        "Encourage natural predators — ladybirds, lacewings, and parasitic wasps eat aphids",
+        "Plant marigold or coriander near the crop as companion plants to attract predators",
+        "Avoid over-fertilizing with nitrogen — soft growth attracts aphids",
+        "Use yellow sticky traps for early detection before population explodes"
+      ],
+      "faqs": [
+        {"q": "There is black mold growing on my leaves — is this a different disease?", "a": "The black mold is sooty mold growing on aphid honeydew. Control the aphids first and the mold will disappear on its own."},
+        {"q": "The aphids keep coming back every week — why?", "a": "Aphid life cycle is very short. You need 3 consecutive sprays every 4-5 days to break the cycle. Single sprays are not enough."},
+        {"q": "I see ants on my plants wherever there are aphids — why?", "a": "Ants farm aphids for their honeydew and protect them from predators. Putting a sticky band on the stem base prevents ants from climbing up."}
+      ],
+      "when_to_consult_kvk": "If the infestation covers more than 50% of plants within one week despite spraying."
+    },
+    {
+      "name": "Nutrient Deficiency",
+      "keywords": ["yellow leaves", "chlorosis", "yellowing", "patta peela", "poshak kami", "nitrogen deficiency", "magnesium deficiency", "pale leaves", "nutrient", "paan peela", "paan kharvatat"],
+      "crops": ["all crops"],
+      "symptoms": [
+        "Uniform yellowing of older lower leaves first = Nitrogen deficiency",
+        "Yellowing between leaf veins while veins remain green = Magnesium or Iron deficiency",
+        "Purple or reddish tint on leaves = Phosphorus deficiency",
+        "Brown scorched leaf edges = Potassium deficiency",
+        "Yellowing of youngest top leaves = Iron or Zinc deficiency"
+      ],
+      "cause": "Lack of essential nutrients in soil, incorrect soil pH preventing nutrient uptake, overwatering washing away nutrients, compacted soil restricting root growth.",
+      "favourable_conditions": "Sandy soil, acidic soil below pH 5.5, alkaline soil above pH 7.5, waterlogged soil",
+      "organic_remedies": [
+        {
+          "name": "Jeevamrut",
+          "preparation": "Mix 10 litres cow dung plus 10 litres cow urine plus 2kg jaggery plus 2kg pulse flour (besan) in 200 litres of water. Stir well. Cover and keep for 48 hours stirring once daily. Fermentation is complete when you see bubbles.",
+          "application": "Dilute 10 litres Jeevamrut in 100 litres water for soil drench. Or dilute 1:10 and spray on leaves as foliar feed.",
+          "frequency": "Every 15 days throughout growing season. Addresses nitrogen, phosphorus, and micronutrient deficiency."
+        },
+        {
+          "name": "Vermicompost Application",
+          "preparation": "Use finished vermicompost directly — should be dark brown, earthy smell, no visible worms.",
+          "application": "Apply 200-300g per plant around root zone and mix lightly into top soil. Water after application.",
+          "frequency": "Once a month throughout growing season."
+        },
+        {
+          "name": "Banana Peel Compost Tea",
+          "preparation": "Soak 5-6 banana peels in 2 litres of water for 2 days.",
+          "application": "Pour the liquid around plant base — rich in potassium, good for fruiting stage.",
+          "frequency": "Every 2-3 weeks, especially during flowering and fruit development."
+        }
+      ],
+      "prevention": [
+        "Get soil tested at KVK once a year — know your soil's actual nutrient levels",
+        "Maintain soil pH between 6.0 and 7.0 — most nutrients are unavailable outside this range",
+        "Add compost or FYM every season to improve soil organic matter",
+        "Use green manure crops like dhaincha or sesbania before the main crop"
+      ],
+      "faqs": [
+        {"q": "My lower leaves are yellow but upper leaves are green — what nutrient is missing?", "a": "This pattern (lower leaves yellow first) is classic Nitrogen deficiency. Apply Jeevamrut drench immediately — results visible in 5-7 days."},
+        {"q": "Leaves are yellow between the veins but veins are green — what is this?", "a": "This is Magnesium or Iron deficiency called interveinal chlorosis. Apply Jeevamrut foliar spray. Also check if soil is too acidic or alkaline."},
+        {"q": "I added a lot of FYM but still getting yellow leaves — why?", "a": "The problem may be soil pH. If pH is too low (acidic) or too high (alkaline), plants cannot absorb nutrients even if they are present. Get soil tested."},
+        {"q": "How quickly will the plants recover after I apply Jeevamrut?", "a": "For foliar spray, you should see improvement in new leaves within 7-10 days. Older yellow leaves will not turn green again, but new growth will be healthy."}
+      ],
+      "when_to_consult_kvk": "If yellowing spreads rapidly to the entire plant or does not improve within 2 weeks of treatment. Get a soil test done."
+    }
+  ]
+}
