@@ -3,7 +3,7 @@ title: Kisaan Mitra
 emoji: 🌾
 colorFrom: green
 colorTo: green
-sdk: gradio
+sdk: docker
 app_file: app.py
 pinned: false
 license: mit
