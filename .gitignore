@@ -20,3 +20,7 @@ Thumbs.db
 
 # Vercel
 .vercel
+
+# Deployment scripts
+_deploy_*.py
+_check_*.py
