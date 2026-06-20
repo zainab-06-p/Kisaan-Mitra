@@ -2117,7 +2117,6 @@ with gr.Blocks(
                 with gr.Row(elem_id="km-control-bar", equal_height=True):
                     audio_input = gr.Audio(
                         label="\U0001f3a4 Voice",
-                        type="filepath",
                         sources=["microphone"],
                         elem_id="km-audio-in",
                         scale=2,
@@ -2125,7 +2124,6 @@ with gr.Blocks(
 
                     image_input = gr.Image(
                         label="\U0001f4f7 Photo",
-                        type="filepath",
                         sources=["upload"],
                         height=120,
                         elem_id="km-image-in",
@@ -2142,7 +2140,6 @@ with gr.Blocks(
 
                     audio_output = gr.Audio(
                         label="\U0001f50a TTS",
-                        type="filepath",
                         elem_id="km-audio-out",
                         scale=2,
                     )
@@ -2179,7 +2176,6 @@ with gr.Blocks(
                     chatbot = gr.Chatbot(
                         label="",
                         height=520,
-                        show_copy_button=True,
                         elem_id="km-chatbot",
                         placeholder=(
                             "<div style='text-align:center;padding:48px 24px;font-family:Plus Jakarta Sans,sans-serif;'>"
