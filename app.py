@@ -136,7 +136,10 @@ def chat_fn(
         {"role": "user", "content": user_msg_for_llm},
         {"role": "assistant", "content": response_text},
     ]
-    chatbot_history = chatbot_history + [[query_text, response_text]]
+    chatbot_history = chatbot_history + [
+        {"role": "user", "content": query_text},
+        {"role": "assistant", "content": response_text},
+    ]
 
     audio_path = speak(
         response_text, lang=detected_lang, output_path="output_audio.mp3"
@@ -2088,13 +2091,6 @@ FOOTER_HTML = """
 # ═══════════════════════════════════════════════════════════════
 
 with gr.Blocks(
-    theme=gr.themes.Soft(
-        primary_hue=gr.themes.colors.green,
-        secondary_hue=gr.themes.colors.emerald,
-        neutral_hue=gr.themes.colors.slate,
-        font=[gr.themes.GoogleFont("Plus Jakarta Sans"), "ui-sans-serif", "sans-serif"],
-    ),
-    css=CUSTOM_CSS,
     title="Kisaan Mitra \u2014 AI Farming Advisor",
 ) as demo:
     with gr.Tabs(selected=0, elem_classes="km-tabs") as tabs:
@@ -2183,7 +2179,6 @@ with gr.Blocks(
                     chatbot = gr.Chatbot(
                         label="",
                         height=520,
-                        type="tuples",
                         bubble_full_width=False,
                         show_copy_button=True,
                         elem_id="km-chatbot",
@@ -2311,4 +2306,11 @@ if __name__ == "__main__":
         server_name="0.0.0.0",
         server_port=int(os.environ.get("SERVER_PORT", 7860)),
         share=False,
+        theme=gr.themes.Soft(
+            primary_hue=gr.themes.colors.green,
+            secondary_hue=gr.themes.colors.emerald,
+            neutral_hue=gr.themes.colors.slate,
+            font=[gr.themes.GoogleFont("Plus Jakarta Sans"), "ui-sans-serif", "sans-serif"],
+        ),
+        css=CUSTOM_CSS,
     )
